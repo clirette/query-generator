@@ -8,5 +8,47 @@
 </head>
 <body>
   <h1>Generator</h1>
+  <form>
+    <h4>Section One: Your Protagonist</h4>
+    <label for="fullName">Full Name</label>
+    <p>What is the full name of your protagonist? If you have multiple protagonists, focus on one for now.</p>
+    <p><em>Ex. Junie B. Jones, Jeffrey “The Dude” Lebowski, Harry Potter, Eddard “Ned” Stark</em></p>
+    <input type="text" name="fullName" id="full-name-input">
+
+    <label for="chosenName">Chosen Name</label>
+    <p>What is the name your character is actually referred to throughout the novel?</p>
+    <p><em>Ex. Junie, Jeff/The Dude, Harry, Ned</em></p>
+    <input type="text" name="chosenName" id="chosen-name-input">
+  </form>
+
+  <div class="template">
+    <p>Dear <span id="honorific">[Honorific]</span> <span id="agent-name">[Agent Name]</span>,
+      <br>
+      <br>
+      <span id="tagline">[Tagline]</span>...
+      <br>
+      <br>
+      [Age]-year-old [Defining Characteristic] <span id="full-name-template">[Full Name]</span> just wants [Hopes and Dreams], but when [Inciting Incident], <span class="chosen-name-template">[Chosen Name]</span> must [Incited Action] or [Consequence of Untaken Action]. 
+      <br>
+      <br>
+      As <span class="chosen-name-template">[Chosen Name]</span> [Preventing Consequences], [Pronoun] discovers [New Discoveries]. When [Greatest Challenge], [Pronoun] has to [Outcome 1] or [Outcome 2]. 
+      <br>
+      <br>
+      Complete at [Word Count] words, [TITLE] is a [category] [genre] set in [setting]. It will appeal to readers of [Comp 1] and [Comp 2]. [TITLE] has potential for a sequel following <span class="chosen-name-template">[Chosen Name]</span>’s story as [Pronoun] continues to [Sequels]. 
+      <br>
+      <br>
+      I am submitting [TITLE] to you because  [Optional Agent Personalization]. 
+      <br>
+      <br>
+      [Optional Qualification 1]. [Optional Qualification 2.] [Optional Personal Detail 1.] [Optional Personal Detail 2.]
+      <br>
+      <br>
+      Thank you for your consideration. 
+      <br>
+      <br>
+      Yours sincerely, 
+      [Author Name] (writing as [Pen Name])</p>
+  </div>
+  <script src="./js/generator.js"></script>
 </body>
 </html>
