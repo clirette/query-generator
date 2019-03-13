@@ -11,7 +11,9 @@ const consequenceUntakenActionInput = document.getElementById('consequence-untak
 const preventingConsequencesInput = document.getElementById('preventing-consequences-input');
 const newDiscoveriesInput = document.getElementById('new-discoveries-input');
 const greatChallengeInput = document.getElementById('great-challenge-input');
-
+const challengeOutcome1Input = document.getElementById('challenge-outcome-1-input');
+const challengeOutcome2Input = document.getElementById('challenge-outcome-2-input');
+const taglineInput = document.getElementById('tagline-input');
 
 
 // Template
@@ -27,6 +29,9 @@ const consequenceUntakenActionTemplate = document.getElementById('consequence-un
 const preventingConsequencesTemplate = document.getElementById('preventing-consequences-template');
 const newDiscoveriesTemplate = document.getElementById('new-discoveries-template');
 const greatChallengeTemplate = document.getElementById('great-challenge-template');
+const challengeOutcome1Template = document.getElementById('challenge-outcome-1-template');
+const challengeOutcome2Template = document.getElementById('challenge-outcome-2-template');
+const taglineTemplate = document.getElementById('tagline-template');
 
 function updateTemplate() {
   fullNameTemplate.innerText = fullNameInput.value;
@@ -41,6 +46,9 @@ function updateTemplate() {
   preventingConsequencesTemplate.innerText = preventingConsequencesInput.value;
   newDiscoveriesTemplate.innerText = newDiscoveriesInput.value;
   greatChallengeTemplate.innerText = greatChallengeInput.value;
+  challengeOutcome1Template.innerText = challengeOutcome1Input.value;
+  challengeOutcome2Template.innerText = challengeOutcome2Input.value;
+  taglineTemplate.innerText = taglineInput.value;
   
 }
 
@@ -56,3 +64,6 @@ consequenceUntakenActionInput.addEventListener('change', updateTemplate);
 preventingConsequencesInput.addEventListener('change', updateTemplate);
 newDiscoveriesInput.addEventListener('change', updateTemplate);
 greatChallengeInput.addEventListener('change', updateTemplate);
+challengeOutcome1Input.addEventListener('change', updateTemplate);
+challengeOutcome2Input.addEventListener('change', updateTemplate);
+taglineInput.addEventListener('change', updateTemplate);
