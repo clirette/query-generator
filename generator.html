@@ -10,15 +10,92 @@
   <h1>Generator</h1>
   <form>
     <h4>Section One: Your Protagonist</h4>
-    <label for="fullName">Full Name</label>
-    <p>What is the full name of your protagonist? If you have multiple protagonists, focus on one for now.</p>
-    <p><em>Ex. Junie B. Jones, Jeffrey “The Dude” Lebowski, Harry Potter, Eddard “Ned” Stark</em></p>
-    <input type="text" name="fullName" id="full-name-input">
+    <div class="item">
+      <label for="fullName">Full Name</label>
+      <p>What is the full name of your protagonist? If you have multiple protagonists, focus on one for now.</p>
+      <p><em>Ex. Junie B. Jones, Jeffrey “The Dude” Lebowski, Harry Potter, Eddard “Ned” Stark</em></p>
+      <input type="text" name="fullName" id="full-name-input">
+    </div>
 
-    <label for="chosenName">Chosen Name</label>
-    <p>What is the name your character is actually referred to throughout the novel?</p>
-    <p><em>Ex. Junie, Jeff/The Dude, Harry, Ned</em></p>
-    <input type="text" name="chosenName" id="chosen-name-input">
+    <div class="item">
+      <label for="chosenName">Chosen Name</label>
+      <p>What is the name your character is actually referred to throughout the novel?</p>
+      <p><em>Ex. Junie, Jeff/The Dude, Harry, Ned</em></p>
+      <input type="text" name="chosenName" id="chosen-name-input">
+    </div>
+
+    <div class="item">
+      <label for="pronoun">Pronoun</label>
+      <p>What is the pronoun you use to describe your character? (Subject form)
+      </p>
+      <p><em>Ex. he, she, they</em></p>
+      <input type="text" name="pronoun" id="pronoun-input">
+    </div>
+
+    <div class="item">
+      <label for="age">Age</label>
+      <p>What is your protagonist’s age at the start of the novel?</p>
+      <p><em>Ex. 25, 35, 101</em></p>
+      <input type="number" name="age" id="age-input">
+    </div>
+
+    <div class="item">
+      <label for="defining-characteristic">Defining Characteristic</label>
+      <p>Describe your protagonist using a word or short phrase that can go before their name.</p>
+      <p><em>Ex. dedicated software engineer, new student, introvert, love-scorned</em></p>
+      <input type="text" name="definingCharacteristic" id="defining-characteristic-input">
+    </div>
+
+    <div class="item">
+      <label for="hopes-and-dreams">Hopes and Dreams</label>
+      <p>Before the story begins, what does your character want? What are their goals or dreams? Finish the sentence in the box below.</p>
+      <p><em>Ex. to fit in at his new boarding school, to escape their evil step-father’s grasp, a new book to read</em></p>
+      <input type="text" name="hopesAndDreams" id="hopes-and-dreams-input" placeholder="Your protagonist wants...">
+    </div>
+
+    <h4>Section Two: The Plot</h4>
+
+    <div class="item">
+      <label for="inciting-incident">Inciting Incident</label>
+      <p>What is the event that upsets your protagonist’s world and sets the story in motion?</p>
+      <p><em>Ex. a fellow student is murdered, The Prince invites them to a ball, she discovers a magical spell book</em></p>
+      <input type="text" name="incitingIncident" id="inciting-incident-input">
+    </div>
+
+    <div class="item">
+      <label for="incited-action">Incited Action</label>
+      <p>What is the action does your protagonist take as a result of the inciting incident?</p>
+      <p><em>Ex. figure out who the murderer is, make The Prince to fall in love with them, protect it at all costs</em></p>
+      <input type="text" name="incitedAction" id="incited-action-input" placeholder="My protagonist must...">
+    </div>
+
+    <div class="item">
+      <label for="consequence-untaken-action">Consequence of Untaken Action</label>
+      <p>What is the bad thing that will happen if the protagonist doesn’t take this action? This should have an impact on your protagonist’s hopes and dreams.</p>
+      <p><em>Ex. the murderer will strike again, they’ll never escape their evil step-father’s clutches, the book might fall into the hands of an organization bent on ridding the world of magic</em></p>
+      <input type="text" name="consequenceUntakenAction" id="consequence-untaken-action-input" placeholder="Or else...">
+    </div>
+
+    <div class="item">
+      <label for="preventing-consequences">Preventing Consequences</label>
+      <p>Your protagonist is doing A Lot in the first half of the book, but in general terms describe the collection of actions they’re taking to prevent consequences.</p>
+      <p><em>Ex. investigates the strange circumstances surrounding the murder; gets ready to attend the ball; searches for the High Librarian, in whose hands the book will be truly safe</em></p>
+      <input type="text" name="preventingConsequences" id="preventing-consequences-input" placeholder="As your protagonist...">
+    </div>
+
+    <div class="item">
+      <label for="new-discoveries">New Discoveries</label>
+      <p>As your protagonist dives into the new world of the story, what are they discovering about it and/or themselves? The discovery should complicate their situation.</p>
+      <p><em>Ex. another student may be responsible for the crime; they may not need the prince to escape their step-father after all; the conspiracy to rid the world of magic goes deeper than they could ever have imagined.</em></p>
+      <input type="text" name="newDiscoveries" id="new-discoveries-input" placeholder="They discover...">
+    </div>
+
+    <div class="item">
+      <label for="great-challenge">The Great Challenge</label>
+      <p>What is your protagonist’s greatest challenge? The problem that seems unsolvable? This should be a plot point introduced mid-way through the book.</p>
+      <p><em>Ex. Jeff discovers he’s the murderer’s new target; their step-father locks them in a tower when they try to leave for the ball; it turns out the High Librarian is working for the evil organization.</em></p>
+      <input type="text" name="greatChallenge" id="great-challenge-input" placeholder="When...">
+    </div>
   </form>
 
   <div class="template">
@@ -28,13 +105,13 @@
       <span id="tagline">[Tagline]</span>...
       <br>
       <br>
-      [Age]-year-old [Defining Characteristic] <span id="full-name-template">[Full Name]</span> just wants [Hopes and Dreams], but when [Inciting Incident], <span class="chosen-name-template">[Chosen Name]</span> must [Incited Action] or [Consequence of Untaken Action]. 
+      <span id="age-template">[Age]</span>-year-old <span id="defining-characteristic-template">[Defining Characteristic]</span> <span id="full-name-template">[Full Name]</span> just wants <span id="hopes-and-dreams-template">[Hopes and Dreams]</span>, but when <span id="inciting-incident-template">[Inciting Incident]</span>, <span class="chosen-name-template">[Chosen Name]</span> must <span id="incited-action-template">[Incited Action]</span> or <span id="consequence-untaken-action-template">[Consequence of Untaken Action]</span>. 
       <br>
       <br>
-      As <span class="chosen-name-template">[Chosen Name]</span> [Preventing Consequences], [Pronoun] discovers [New Discoveries]. When [Greatest Challenge], [Pronoun] has to [Outcome 1] or [Outcome 2]. 
+      As <span class="chosen-name-template">[Chosen Name]</span> <span id="preventing-consequences-template">[Preventing Consequences]</span>, <span class="pronoun-template">[Pronoun]</span> discovers <span id="new-discoveries-template">[New Discoveries]</span>. When <span id="great-challenge-template">[Greatest Challenge]</span>, <span class="pronoun-template">[Pronoun]</span> has to [Outcome 1] or [Outcome 2]. 
       <br>
       <br>
-      Complete at [Word Count] words, [TITLE] is a [category] [genre] set in [setting]. It will appeal to readers of [Comp 1] and [Comp 2]. [TITLE] has potential for a sequel following <span class="chosen-name-template">[Chosen Name]</span>’s story as [Pronoun] continues to [Sequels]. 
+      Complete at [Word Count] words, [TITLE] is a [category] [genre] set in [setting]. It will appeal to readers of [Comp 1] and [Comp 2]. [TITLE] has potential for a sequel following <span class="chosen-name-template">[Chosen Name]</span>’s story as <span class="pronoun-template">[Pronoun]</span> continues to [Sequels]. 
       <br>
       <br>
       I am submitting [TITLE] to you because  [Optional Agent Personalization]. 
