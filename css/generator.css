@@ -1,15 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+}
+
+h1, h3, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 38px;
+  color: #6d7993;
+  border-top: 8px solid #9099a2;
+}
+
+.header {
+  background: #96858f; 
+}
+
+.header h1 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+#top-h3 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.query-form {
+  background: #e2e2e248;
+}
+
+.item {
+  margin: 50px auto;
+  width: 60%;
+}
+
+.item label {
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.item input {
+  width: 40%;
+  height: 5vh;
+  padding-left: 10px;
+}
+
+#pronoun-input, #age-input {
+  width: 8%;
+}
 
 
 
 
 
+.pledge {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 5px solid black;
+  margin-bottom: 20px;
+}
 
+.pledge h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
 
+.pledge button {
+  width: 80%;
+}
 
 .template {
   display: none;
+  text-align: left;
 }
 
 .info {
   display: none;
+  text-align: left;
 }
