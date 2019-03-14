@@ -1,3 +1,8 @@
+// Page Sections query-form template info
+const queryFormDiv = document.querySelector('.query-form');
+const templateDiv = document.querySelector('.template');
+const infoDiv = document.querySelector('.info');
+
 // Inputs
 const fullNameInput = document.getElementById('full-name-input');
 const chosenNameInput = document.getElementById('chosen-name-input');
@@ -69,7 +74,14 @@ const honorificTemplate = document.getElementById('honorific-template');
 const agentPersonalizationTemplate = document.getElementById('agent-personalization-template');
 
 function updateTemplate(e) {
-  e.preventDefault()
+  e.preventDefault();
+
+  window.scrollTo(0,0);
+
+  queryFormDiv.style.display = 'none';
+  templateDiv.style.display = 'block';
+  infoDiv.style.display = 'block';
+
   fullNameTemplate.innerText = fullNameInput.value;
   chosenNameTemplates.forEach(template => template.innerText = chosenNameInput.value);
   pronounTemplates.forEach(template => template.innerText = pronounInput.value);
@@ -103,38 +115,5 @@ function updateTemplate(e) {
   honorificTemplate.innerText = honorificInput.value;
   agentPersonalizationTemplate.innerText = agentPersonalizationInput.value;
 }
-
-// fullNameInput.addEventListener('change', updateTemplate);
-// chosenNameInput.addEventListener('change', updateTemplate);
-// pronounInput.addEventListener('change', updateTemplate);
-// ageInput.addEventListener('change', updateTemplate);
-// definingCharacteristicInput.addEventListener('change', updateTemplate);
-// hopesAndDreamsInput.addEventListener('change', updateTemplate);
-// incitingIncidentInput.addEventListener('change', updateTemplate);
-// incitedActionInput.addEventListener('change', updateTemplate);
-// consequenceUntakenActionInput.addEventListener('change', updateTemplate);
-// preventingConsequencesInput.addEventListener('change', updateTemplate);
-// newDiscoveriesInput.addEventListener('change', updateTemplate);
-// greatChallengeInput.addEventListener('change', updateTemplate);
-// challengeOutcome1Input.addEventListener('change', updateTemplate);
-// challengeOutcome2Input.addEventListener('change', updateTemplate);
-// taglineInput.addEventListener('change', updateTemplate);
-// titleInput.addEventListener('change', updateTemplate);
-// wordCountInput.addEventListener('change', updateTemplate);
-// genreInput.addEventListener('change', updateTemplate);
-// settingInput.addEventListener('change', updateTemplate);
-// categoryInput.addEventListener('change', updateTemplate);
-// compTitle1Input.addEventListener('change', updateTemplate);
-// compTitle2Input.addEventListener('change', updateTemplate);
-// sequelInput.addEventListener('change', updateTemplate);
-// authorNameInput.addEventListener('change', updateTemplate);
-// penNameInput.addEventListener('change', updateTemplate);
-// qualifications1Input.addEventListener('change', updateTemplate);
-// qualifications2Input.addEventListener('change', updateTemplate);
-// personalDetails1Input.addEventListener('change', updateTemplate);
-// personalDetails2Input.addEventListener('change', updateTemplate);
-// agentNameInput.addEventListener('change', updateTemplate);
-// honorificInput.addEventListener('change', updateTemplate);
-// agentPersonalizationInput.addEventListener('change', updateTemplate);
 
 submitButton.addEventListener('click', updateTemplate);
