@@ -2,6 +2,7 @@
 const queryFormDiv = document.querySelector('.query-form');
 const templateDiv = document.querySelector('.template');
 const infoDiv = document.querySelector('.info');
+const form = document.querySelector('.form');
 
 // Inputs
 const fullNameInput = document.getElementById('full-name-input');
@@ -117,3 +118,8 @@ function updateTemplate(e) {
 }
 
 submitButton.addEventListener('click', updateTemplate);
+form.addEventListener('keypress', e => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+  }
+})

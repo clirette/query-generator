@@ -7,9 +7,10 @@
 body {
   text-align: center;
   margin: 0;
+  background: #e2e2e248;
 }
 
-h1, h3, label {
+h1, h2, h3, label {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -26,6 +27,10 @@ h3 {
   border-top: 8px solid #9099a2;
 }
 
+h2 {
+  font-weight: 500;
+}
+
 .header {
   background: #96858f; 
 }
@@ -40,10 +45,6 @@ h3 {
   padding-top: 10px;
 }
 
-.query-form {
-  background: #e2e2e248;
-}
-
 .item {
   margin: 50px auto;
   width: 60%;
@@ -56,18 +57,14 @@ h3 {
 }
 
 .item input {
-  width: 40%;
-  height: 5vh;
+  width: 60%;
+  min-height: 1rem;
   padding-left: 10px;
 }
 
 #pronoun-input, #age-input {
-  width: 8%;
+  width: 25%;
 }
-
-
-
-
 
 .pledge {
   width: 60%;
@@ -94,4 +91,38 @@ h3 {
 .info {
   display: none;
   text-align: left;
+}
+
+.template {
+  margin: auto .8rem;
+}
+
+.link {
+  margin: 8px auto;
+}
+
+.steps {
+  margin-bottom: 0;
+}
+
+.steps + p {
+  margin-top: 0;
+}
+
+@media (max-width: 667px) {
+  .item, .pledge {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .item label {
+    font-size: 22px;
+  }
 }
