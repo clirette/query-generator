@@ -62,36 +62,43 @@
       <div class="item">
         <label for="inciting-incident">Inciting Incident</label>
         <p>What is the event that upsets your protagonist’s world and sets the story in motion?</p>
-        <p><em>Ex. a fellow student is murdered, The Prince invites them to a ball, she discovers a magical spell book</em></p>
+        <p><em>Ex. a fellow student dies, The Prince invites them to a ball, she discovers a magical spell book</em></p>
         <input type="text" name="incitingIncident" id="inciting-incident-input">
       </div>
 
       <div class="item">
         <label for="incited-action">Incited Action</label>
         <p>What is the action does your protagonist take as a result of the inciting incident?</p>
-        <p><em>Ex. figure out who the murderer is, make The Prince to fall in love with them, protect it at all costs</em></p>
-        <input type="text" name="incitedAction" id="incited-action-input" placeholder="My protagonist must...">
+        <p><em>Ex. discovers they were murdered, accepts the invitation, decides to protect it at all costs</em></p>
+        <input type="text" name="incitedAction" id="incited-action-input" placeholder="My protagonist...">
       </div>
 
       <div class="item">
-        <label for="consequence-untaken-action">Consequence of Untaken Action</label>
-        <p>What is the bad thing that will happen if the protagonist doesn’t take this action? This should have an impact on your protagonist’s hopes and dreams.</p>
-        <p><em>Ex. the murderer will strike again, they’ll never escape their evil step-father’s clutches, the book might fall into the hands of an organization bent on ridding the world of magic</em></p>
-        <input type="text" name="consequenceUntakenAction" id="consequence-untaken-action-input" placeholder="Or else...">
+        <label for="updated-purpose">Updated Purpose</label>
+        <p>What is your protagonist's new purpose? And what might be the consequences of not reaching it?.</p>
+        <p><em>Ex. must investigate the crimes before the murderer strikes again, hatches a plan to make the prince fall in love with them as an escape from her life with their evil step-father, is the only force keeping the book from falling into the hands of an organization bent on ridding the world of magic</em></p>
+        <input type="text" name="updatedPurpose" id="updated-purpose-input" placeholder="Now the protagonist...">
       </div>
 
       <div class="item">
-        <label for="preventing-consequences">Preventing Consequences</label>
-        <p>Your protagonist is doing A Lot in the first half of the book, but in general terms describe the collection of actions they’re taking to prevent consequences.</p>
+        <label for="new-normal">The New Normal</label>
+        <p>Your protagonist is doing A Lot in the first half of the book, but in general terms describe the collection of actions that your protagonist is taking, now that events have been incited, and calls to action have been answered.</p>
         <p><em>Ex. investigates the strange circumstances surrounding the murder; gets ready to attend the ball; searches for the High Librarian, in whose hands the book will be truly safe</em></p>
-        <input type="text" name="preventingConsequences" id="preventing-consequences-input" placeholder="As your protagonist...">
+        <input type="text" name="newNormal" id="new-normal-input" placeholder="As your protagonist...">
       </div>
-
+      
       <div class="item">
         <label for="new-discoveries">New Discoveries</label>
         <p>As your protagonist dives into the new world of the story, what are they discovering about it and/or themselves? The discovery should complicate their situation.</p>
         <p><em>Ex. another student may be responsible for the crime; they may not need the prince to escape their step-father after all; the conspiracy to rid the world of magic goes deeper than they could ever have imagined.</em></p>
         <input type="text" name="newDiscoveries" id="new-discoveries-input" placeholder="They discover...">
+      </div>
+
+      <div class="item">
+        <label for="initial-challenges">Initial Challenges</label>
+        <p>What are some of the initial challenges your protagonist faces?</p>
+        <p><em>Ex. a red herring leads him in the wrong direction and leads him to accuse the wrong person in front of the entire school; the conspirators destroy the library and force her to flee.</em></p>
+        <input type="text" name="initialChallenges" id="initial-challenges-input" placeholder="They're put to the test when...">
       </div>
 
       <div class="item">
@@ -234,10 +241,10 @@
       <span id="tagline-template">[Tagline]</span>...
       <br>
       <br>
-      <span id="age-template">[Age]</span>-year-old <span id="defining-characteristic-template">[Defining Characteristic]</span> <span id="full-name-template">[Full Name]</span> just wants <span id="hopes-and-dreams-template">[Hopes and Dreams]</span>, but when <span id="inciting-incident-template">[Inciting Incident]</span>, <span class="chosen-name-template">[Chosen Name]</span> must <span id="incited-action-template">[Incited Action]</span> or <span id="consequence-untaken-action-template">[Consequence of Untaken Action]</span>. 
+      <span id="age-template">[Age]</span>-year-old <span id="defining-characteristic-template">[Defining Characteristic]</span> <span id="full-name-template">[Full Name]</span> just wants <span id="hopes-and-dreams-template">[Hopes and Dreams]</span>, but when <span id="inciting-incident-template">[Inciting Incident]</span>, <span class="chosen-name-template">[Chosen Name]</span> must <span id="incited-action-template">[Incited Action]</span> or <span id="updated-purposes-template">[Updated Purposes]</span>. 
       <br>
       <br>
-      As <span class="chosen-name-template">[Chosen Name]</span> <span id="preventing-consequences-template">[Preventing Consequences]</span>, <span class="pronoun-template">[Pronoun]</span> discovers <span id="new-discoveries-template">[New Discoveries]</span>. When <span id="great-challenge-template">[Greatest Challenge]</span>, <span class="pronoun-template">[Pronoun]</span> has to <span id="challenge-outcome-1-template">[Outcome 1]</span> or <span id="challenge-outcome-2-template">[Outcome 2]</span>. 
+      As <span class="chosen-name-template">[Chosen Name]</span> <span id="new-normal-template">[The New Normal]</span>, <span class="pronoun-template">[Pronoun]</span> discovers <span id="new-discoveries-template">[New Discoveries]</span>. <span class="chosen-name-template">[Chosen Name]</span> is put to the test when <span id="initial-challenges-template">[Initial Challenges]</span>, and when <span id="great-challenge-template">[Greatest Challenge]</span>, <span class="pronoun-template">[Pronoun]</span> has to <span id="challenge-outcome-1-template">[Outcome 1]</span> or <span id="challenge-outcome-2-template">[Outcome 2]</span>. 
       <br>
       <br>
       Complete at <span id="word-count-template">[Word Count]</span> words, <span class="title-template">[Title]</span> is a <span id="category-template">[category]</span> <span id="genre-template">[genre]</span> set in <span id="setting-template">[setting]</span>. It will appeal to readers of <span id="comp-title-1-template">[Comp 1]</span> and <span id="comp-title-2-template">[Comp 2]</span>. <span class="title-template">[Title]</span> has potential for a sequel following <span class="chosen-name-template">[Chosen Name]</span>’s story as <span class="pronoun-template">[Pronoun]</span> continues to <span id="sequel-template">[Sequels]</span>. 
